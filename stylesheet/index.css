@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #d6cab0;
+  --secondary-color: #86817C;
+}
+body {
+  font-family: 'Poppins';
+}
+a:hover {
+  color: white;
+
+}
+.overflow-auto{
+  overflow: hidden ; /* Hide scrollbars */
+
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid var(--primary-color);
+  display: inline-block;
+  position: absolute;
+  top: 87px;
+  left: 160px;
+  width: 34px;
+  height: 34px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.card{
+  background: border-box !important;
+  border: 1px solid black !important;
+  height: fit-content !important;
+}
+.hiddenDiv{
+  visibility: hidden;
+}
+.showenDiv{
+  visibility: visible;
+}
+.parallax {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../photos/background-parallax.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+#coinsContainer{
+  height: 470px !important;
+  align-content: flex-start !important;
+}
+#emptyReports{
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50px;
+  width: 80%;
+  padding: 1em;
+}
+#error-section{
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  height: 74px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  left: 895px;
+  top: 125px;
+  border-radius: 5px;
+  visibility: hidden;
+  animation: fadeIn 3s normal;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#wrong-p{
+  font-size: 15px;
+}
+.singleColorSpan{
+  color: var(--secondary-color) !important;
+}
+.singleColorSpanSecondary{
+  color: var(--primary-color);
+
+}
+#max-small-msg{
+  font-size: 0.3em;
+  font-weight: 600;
+}
+.seconderyHeader{
+  color: rgb(90, 90, 90);
+  font-size: 20px;
+
+}
+.page{
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+}
+
+.current-page{
+    visibility: visible;
+}
+.logo{
+  margin-top: 16px;
+
+}
+.navbar .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+    margin:6px;
+    margin-left: 65px;
+}
+  
+.navbar .logo span {
+    color: var(--primary-color);
+}
+.navbar {
+  place-content: flex-start;
+    background: white;
+    padding: 1em;
+    background-image: url("../photos/background-parallax.jpg");
+    /* background-image: url("../../project2_crypto_tries/navBack.jpg"); */
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+
+
+}
+
+.btn-navbar{
+    color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block; 
+    border: none;
+    margin-left: 17px;
+}
+.project-btn-sm{
+  color: var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  border-radius: 4em;
+  font-weight: bold;
+  display: inline-block; 
+  border: none;
+}
+.project-btn-danger-sm{
+  color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  border-radius: 4em;
+  font-weight: bold;
+  display: inline-block; 
+  border: none;
+}
+
+.switch-position{
+    position: absolute;
+    right: 22px;
+    top: 70px;
+}
+.smDate{
+  font-size: 0.7rem;
+}
+
+canvas{
+  width:1200px !important;
+  height:420px !important;
+}
+
+#about-card{
+  padding: 9px;
+}
+#charts-loader{
+  top: -40px;
+  left: 350px;
+}
