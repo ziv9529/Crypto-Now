@@ -11,7 +11,10 @@ Technologies I used in my project: JavaScript, Rest API, CSS.
 
 ## Images
 
-<img src="./photos/crypto_1.png" width="400" height="220"> <img src="./photos/crypto_2.png" width="400" height="220"> <img src="./photos/crypto_3.png" width="400" height="220"> <img src="./photos/crypto_4.png" width="400" height="220">
+<img src="./photos/crypto_1.png">
+<img src="./photos/crypto_2.png">
+<img src="./photos/crypto_3.png">
+<img src="./photos/crypto_4.png">
 
 
 ## Getting Started
