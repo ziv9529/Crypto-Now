@@ -61,12 +61,12 @@ function coinsCardFactory(data) {
 
 function searchCryptoByInput() {
     const currentVal = $("#cryptoSearch").val();
-    const newData = []
+    
     if (!Array.isArray(state.coins)) return;
-    state.coins.map((c) => {
+    const newData = state.coins.map((c) => {
         if ((c.name.toLowerCase()).includes(currentVal.toLowerCase()) ||
             (c.symbol.toLowerCase()).includes(currentVal.toLowerCase())) {
-            newData.push(c);
+            return (c);
         }
     })
     draw(newData);

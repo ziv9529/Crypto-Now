@@ -8,7 +8,7 @@ $("#home-btn").on("click", function () {
 });
 
 $("#CryptoWall-btn").on("click", function () {
-    if (myChart != null) {
+    if (myChart !== null) {
         clearInterval(drawInterval)
     }
     $("#emptyReports").css({ visibility: "hidden" })
